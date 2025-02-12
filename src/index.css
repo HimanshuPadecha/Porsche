@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+.fontCon,.text-change{
+  font-family: "Noto Serif", serif;
+}
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/* html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+ /*  */
+ .background {
+  background-color: #212225;
+ }
+
+/* .borderCus{
+  border-bottom: 0.5px solid rgb(39 39 43);
+} */
+
+.overfeel{
+  font-family: "Orbitron", serif;
+  color: #fbfcff;
+}
+
+.textMod{
+  color: #fbfcff;
+  font-weight: 600;
+}
+
+/* .smallHero{
+  margin: 50px 0;
+} */
+
+.White{
+  color: #fbfcff;
+}
+
+.bg-White{
+  background-color: #fbfcff;
+}
+.bg-Black{
+  background-color: rgb(14 14 18);
+}
+.Black{
+  color: rgb(14 14 18);
+}
+
+.modelSelectionCardZoom:hover .modelSelectionMainImg, .smallHeroImg:hover{
+  transform: scale(1.1);
+  transition: all ease 0.6s;
+}
+
+.modelSelectionMainImg,.smallHeroImg{
+  transition: all ease 0.6s;
+}
+
+.modelSelectionMaindiv:hover .modelSelectionCardZoom:not(:hover),.smallHero:hover .smallHerodiv:not(:hover){
+  filter: grayscale(0.5) blur(3px);
+}
+
+
+footer{
+  background-color: rgb(14 14 18);
+  color: #fbfcff;
+}
+
+.icon{
+  color: rgb(14 14 18);
+}
+button , span{
+  cursor: pointer;
+}
+
+.sep{
+  height: 3px;
+  background-color: rgb(39 39 43);
+}
+.bg-sep{
+  background-color: #d8d8db;
+
+}
+ 
+
+.carInfo,.stats {
+  color: rgb(39 39 43);
+}
+
+.customBorder{
+  border: 2px solid #6b6d70;
+}
+
+:root {
+  --spinner-size: 50px;
+  --spinner-thickness: 10px;
+  --spinner-inner-circle: calc(var(--spinner-size) - var(--spinner-thickness));
+
+  --spinner-color: #005041;
+  --spinner-bg: #26A69A;
+  --spinner-inner-bg: #009688;
+}
+:root {
+  --spinner-size: 20px;
+  --spinner-thickness: 5px;
+  --spinner-radius: 50%;
+  --spinner-inner-circle: calc(var(--spinner-size) - var(--spinner-thickness));
+
+  --spinner-color: #fff;
+  --spinner-bg: #000;
+  --spinner-inner-bg: #fff;
+  --spinner-speed: 1s;
+}
+
+.spin-loader {
+  border-radius: 80%;
+  display: block;
+  height: var(--spinner-size);
+  width: var(--spinner-size);
+  position: relative;
+  animation: spin var(--spinner-speed) linear infinite;
+  background: var(--spinner-bg);
+}
+
+.spin-loader::before,
+.spin-loader::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.spin-loader::before {
+  border-radius: 0 var(--spinner-radius) var(--spinner-radius) 0;
+  height: var(--spinner-size);
+  width: 50%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background: var(--spinner-color);
+  background-image: linear-gradient(var(--spinner-bg), var(--spinner-color));
+}
+
+.spin-loader::after {
+  border-radius: var(--spinner-radius);
+  height: var(--spinner-inner-circle);
+  width: var(--spinner-inner-circle);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: var(--spinner-inner-bg);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.card img:hover{
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+.card img{
+  transition: all ease 0.6s;
+  border-radius: 0px;
+}
